@@ -1,1 +1,10 @@
-.class
+*.class
+*.ans
+*.in
+*.txt
+in1
+in2
+*.zip
+out/*
+.idea/*
+*.iml
