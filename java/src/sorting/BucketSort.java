@@ -53,12 +53,12 @@ public class BucketSort implements InplaceSort {
     sorter.sort(array);
 
 
-    System.out.println(java.util.Arrays.toString(array));
+    System.out.println(Arrays.toString(array));
 
     array = new int[] {10, 10, 10, 10, 10};
     sorter.sort(array);
 
 
-    System.out.println(java.util.Arrays.toString(array));
+    System.out.println(Arrays.toString(array));
   }
 }

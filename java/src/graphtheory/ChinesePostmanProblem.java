@@ -345,7 +345,7 @@ public class ChinesePostmanProblem {
       }
 
 
-      java.util.Arrays.sort(leftNodes);
+      Arrays.sort(leftNodes);
 
       matchingSize = matchingSize * 2;
       matching = new int[matchingSize];

@@ -1,3 +1,5 @@
+package dp.examples.domino
+
 class Solution {
   static int n;
   static Long[][] dp;

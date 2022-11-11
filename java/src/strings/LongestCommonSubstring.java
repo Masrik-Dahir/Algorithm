@@ -247,7 +247,7 @@ public class LongestCommonSubstring {
         }
 
 
-        java.util.Arrays.sort(ranks);
+        Arrays.sort(ranks);
 
         int newRank = 0;
         suffixRanks[1][ranks[0].originalIndex] = 0;
@@ -535,7 +535,7 @@ public class LongestCommonSubstring {
 
     public CompactMinSegmentTree(int size) {
       tree = new int[2 * (n = size)];
-      java.util.Arrays.fill(tree, UNIQUE);
+      Arrays.fill(tree, UNIQUE);
     }
 
     public CompactMinSegmentTree(int[] values) {

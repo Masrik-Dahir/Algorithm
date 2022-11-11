@@ -36,7 +36,7 @@ public class BellmanFordAdjacencyList {
 
 
     double[] dist = new double[V];
-    java.util.Arrays.fill(dist, Double.POSITIVE_INFINITY);
+    Arrays.fill(dist, Double.POSITIVE_INFINITY);
     dist[start] = 0;
 
 

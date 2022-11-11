@@ -107,7 +107,7 @@ public class TopologicalSortAdjacencyList {
     int[] ordering = topologicalSort(graph, N);
 
 
-    System.out.println(java.util.Arrays.toString(ordering));
+    System.out.println(Arrays.toString(ordering));
 
 
     Integer[] dists = dagShortestPath(graph, 0, N);

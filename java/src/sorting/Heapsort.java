@@ -61,6 +61,6 @@ public class Heapsort implements InplaceSort {
     sorter.sort(array);
 
 
-    System.out.println(java.util.Arrays.toString(array));
+    System.out.println(Arrays.toString(array));
   }
 }

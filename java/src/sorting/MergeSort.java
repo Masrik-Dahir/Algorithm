@@ -55,6 +55,6 @@ public class MergeSort implements InplaceSort {
     array = MergeSort.mergesort(array);
 
 
-    System.out.println(java.util.Arrays.toString(array));
+    System.out.println(Arrays.toString(array));
   }
 }

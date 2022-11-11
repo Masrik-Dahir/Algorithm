@@ -82,7 +82,7 @@ public class Kahns {
     int[] ordering = solver.kahns(g);
 
 
-    System.out.println(java.util.Arrays.toString(ordering));
+    System.out.println(Arrays.toString(ordering));
   }
 
   private static void test1() {
@@ -95,7 +95,7 @@ public class Kahns {
     addDirectedEdge(g, 2, 4);
     addDirectedEdge(g, 4, 5);
     Kahns solver = new Kahns();
-    System.out.println(java.util.Arrays.toString(solver.kahns(g)));
+    System.out.println(Arrays.toString(solver.kahns(g)));
   }
 
   private static void test2() {
@@ -110,7 +110,7 @@ public class Kahns {
     addDirectedEdge(g, 3, 4);
     addDirectedEdge(g, 5, 4);
     Kahns solver = new Kahns();
-    System.out.println(java.util.Arrays.toString(solver.kahns(g)));
+    System.out.println(Arrays.toString(solver.kahns(g)));
   }
 
   private static void cycleTest() {
@@ -120,6 +120,6 @@ public class Kahns {
     addDirectedEdge(g, 2, 3);
     addDirectedEdge(g, 3, 0);
     Kahns solver = new Kahns();
-    System.out.println(java.util.Arrays.toString(solver.kahns(g)));
+    System.out.println(Arrays.toString(solver.kahns(g)));
   }
 }

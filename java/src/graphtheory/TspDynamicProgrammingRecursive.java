@@ -108,7 +108,7 @@ public class TspDynamicProgrammingRecursive {
 
     int n = 6;
     double[][] distanceMatrix = new double[n][n];
-    for (double[] row : distanceMatrix) java.util.Arrays.fill(row, 10000);
+    for (double[] row : distanceMatrix) Arrays.fill(row, 10000);
     distanceMatrix[1][4] = distanceMatrix[4][1] = 2;
     distanceMatrix[4][2] = distanceMatrix[2][4] = 4;
     distanceMatrix[2][3] = distanceMatrix[3][2] = 6;

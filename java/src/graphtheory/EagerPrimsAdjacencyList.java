@@ -347,7 +347,7 @@ public class EagerPrimsAdjacencyList {
 
   private static void lazyVsEagerAnalysis() {
     int n = 5000;
-    List<List<EagerPrimsAdjacencyList.Edge>> g1 = EagerPrimsAdjacencyList.createEmptyGraph(n);
+    List<List<Edge>> g1 = EagerPrimsAdjacencyList.createEmptyGraph(n);
     List<List<LazyPrimsAdjacencyList.Edge>> g2 = LazyPrimsAdjacencyList.createEmptyGraph(n);
 
     for (int i = 0; i < n; i++) {

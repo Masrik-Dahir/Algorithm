@@ -31,7 +31,7 @@ public class RabinKarp {
 
 
     for (int i = 0; i < N_HASHES; i++) {
-      java.math.BigInteger mod = new java.math.BigInteger(String.valueOf(MODS[i]));
+      BigInteger mod = new BigInteger(String.valueOf(MODS[i]));
       MOD_INVERSES[i] = BIG_ALPHA.modInverse(mod).longValue();
       BIG_MODS[i] = mod;
     }

@@ -216,18 +216,18 @@ public class HashTableSeparateChaining<K, V> implements Iterable<K> {
 
 
   @Override
-  public java.util.Iterator<K> iterator() {
+  public Iterator<K> iterator() {
     final int elementCount = size();
-    return new java.util.Iterator<K>() {
+    return new Iterator<K>() {
 
       int bucketIndex = 0;
-      java.util.Iterator<Entry<K, V>> bucketIter = (table[0] == null) ? null : table[0].iterator();
+      Iterator<Entry<K, V>> bucketIter = (table[0] == null) ? null : table[0].iterator();
 
       @Override
       public boolean hasNext() {
 
 
-        if (elementCount != size) throw new java.util.ConcurrentModificationException();
+        if (elementCount != size) throw new ConcurrentModificationException();
 
 
         if (bucketIter == null || !bucketIter.hasNext()) {
@@ -237,7 +237,7 @@ public class HashTableSeparateChaining<K, V> implements Iterable<K> {
             if (table[bucketIndex] != null) {
 
 
-              java.util.Iterator<Entry<K, V>> nextIter = table[bucketIndex].iterator();
+              Iterator<Entry<K, V>> nextIter = table[bucketIndex].iterator();
               if (nextIter.hasNext()) {
                 bucketIter = nextIter;
                 break;

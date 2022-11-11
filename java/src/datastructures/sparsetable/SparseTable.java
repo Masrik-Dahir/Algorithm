@@ -221,7 +221,7 @@ public class SparseTable {
     long[] values = {1, 2, -3, 2, 4, -1, 5};
 
 
-    SparseTable sparseTable = new SparseTable(values, SparseTable.Operation.MULT);
+    SparseTable sparseTable = new SparseTable(values, Operation.MULT);
 
     System.out.println(sparseTable.query(2, 3));
   }
@@ -230,7 +230,7 @@ public class SparseTable {
     long[] values = {4, 2, 3, 7, 1, 5, 3, 3, 9, 6, 7, -1, 4};
 
 
-    SparseTable sparseTable = new SparseTable(values, SparseTable.Operation.MIN);
+    SparseTable sparseTable = new SparseTable(values, Operation.MIN);
 
     System.out.printf("Min value between [2, 7] = %d\n", sparseTable.query(2, 7));
   }
@@ -238,7 +238,7 @@ public class SparseTable {
   private static void example3() {
     long[] values = {4, 4, 4, 4, 4, 4};
 
-    SparseTable sparseTable = new SparseTable(values, SparseTable.Operation.SUM);
+    SparseTable sparseTable = new SparseTable(values, Operation.SUM);
 
     System.out.printf("%d\n", sparseTable.query(0, values.length - 1));
   }

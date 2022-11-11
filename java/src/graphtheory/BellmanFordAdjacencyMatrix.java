@@ -46,7 +46,7 @@ public class BellmanFordAdjacencyMatrix {
 
 
     dist = new double[n];
-    java.util.Arrays.fill(dist, Double.POSITIVE_INFINITY);
+    Arrays.fill(dist, Double.POSITIVE_INFINITY);
     dist[start] = 0;
 
 
@@ -84,7 +84,7 @@ public class BellmanFordAdjacencyMatrix {
 
 
     for (int i = 0; i < n; i++) {
-      java.util.Arrays.fill(graph[i], Double.POSITIVE_INFINITY);
+      Arrays.fill(graph[i], Double.POSITIVE_INFINITY);
       graph[i][i] = 0;
     }
 

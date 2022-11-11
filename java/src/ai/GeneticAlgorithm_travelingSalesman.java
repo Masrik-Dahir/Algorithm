@@ -235,7 +235,7 @@ public class GeneticAlgorithm_travelingSalesman {
 
     @Override
     public String toString() {
-      return java.util.Arrays.toString(cities);
+      return Arrays.toString(cities);
     }
   }
 }

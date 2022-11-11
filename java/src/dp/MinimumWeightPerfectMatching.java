@@ -173,7 +173,7 @@ public class MinimumWeightPerfectMatching {
     }
 
 
-    java.util.Arrays.sort(leftNodes);
+    Arrays.sort(leftNodes);
 
     matching = new int[n];
     for (int i = 0; i < n / 2; i++) {
